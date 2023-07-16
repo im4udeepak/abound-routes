@@ -8,6 +8,15 @@
   }
 }
 @media (max-width: 991px) {
+  .header.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
   /*navigation*/
   .header .logo_wrap {
     margin-bottom: 0;
@@ -86,6 +95,9 @@
     justify-content: end;
     width: 100%;
   }
+  #google_translate_element{
+    margin-top: 8px;
+  }
   footer .row > div:not(:last-child) {
     border-right: none;
     border-bottom: 3px solid var(--thm-border);
@@ -101,6 +113,16 @@
   footer .menu {
     margin-top: 30px;
     margin-bottom: 25px;
+  }
+  .about-info-wrap>*:not(:last-child){
+    border-right: none;
+  }
+  .tabs.style_two .nav-item{
+    white-space: nowrap;
+    flex:0;
+  }
+  .tabs.style_two .nav-item .nav-link{
+    padding-left: 55px;
   }
 }
 

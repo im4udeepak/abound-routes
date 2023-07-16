@@ -19,6 +19,7 @@
         e.preventDefault();
         submenu.slideToggle(200);
     });
+    
     // Sticky Header
     var header = $(".can-sticky");
     var footer = $(".ft-sticky");
