@@ -15,6 +15,9 @@
     <link href="assets/css/plugins/slick.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 
 <body>
@@ -24,21 +27,23 @@
     </div>
     <!-- Preloader End -->
     <!-- Header Start -->
-    <!--  can-sticky -->
-    <section class="header" id="header">
+    <section class="header can-sticky" id="header">
         <!-- logo -->
         <div class="logo_wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="logo">
                             <a href="#header" class="scroll-link">
                                 <img src="assets/images/logo.png" alt="logo" class="image-fit-contain">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-9 d-none d-lg-block">
-                        <a href="#contact" class="link scroll-link">Contact Us</a>
+                    <div class="col-lg-9 col-6">
+                        <div class="d-flex justify-content-end">
+                            <div id="google_translate_element" class="d-inline-block link"></div>
+                            <a href="#contact" class="link scroll-link d-none d-lg-inline-block ms-4">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,7 +58,7 @@
                         <nav class="navigation">
                             <ul class="main-menu">
                                 <li class="menu-item">
-                                    <a href="#header" class="scroll-link">Home</a>
+                                    <a href="#header" class="scroll-link active">Home</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#about" class="scroll-link">About Us</a>
@@ -62,25 +67,14 @@
                                     <a href="#subContinent" class="scroll-link">India & Sub-Continent</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#experiences" class="scroll-link">The Experiences</a>
+                                    <a href="#curatedExperiences" class="scroll-link">Curated Experiences</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#services" class="scroll-link">Our Services</a>
+                                    <a href="#expertise" class="scroll-link">Our Expertise</a>
                                 </li>
                                 <li class="menu-item d-block d-lg-none">
                                     <a href="#contact" class="scroll-link">Contact Us</a>
                                 </li>
-                                <!-- <li class="menu-item menu-item-has-children">
-                                    <a href="#">Books</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="books.html">Books</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="book-details.html">Books Details</a>
-                                        </li>
-                                    </ul>
-                                </li> -->
                             </ul>
                         </nav>
                         <!-- bar -->
@@ -105,12 +99,13 @@
     <!-- Banner Start -->
     <div class="banner" id="banner">
         <div class="container">
-            <img src="assets/images/latest-images/01.png" alt="banner" class="image-fit">
+            <video src="assets/videos/banner.mp4" class="image-fit" autoplay="true" loop muted="true"></video>
+            <!-- <img src="assets/images/latest-images/01.png" alt="banner" class="image-fit"> -->
         </div>
     </div>
     <!-- Banner End -->
     <!-- About Start -->
-    <section class="section section-padding" id="about">
+    <section class="section section-bg" id="about" style="background-image: url('assets/images/white-flower.png');">
         <div class="container">
             <div class="section-header">
                 <img src="assets/images/icon.png" class="icon" alt="icon">
@@ -137,33 +132,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-text text-center mb-xl-30">
-                        <p class="thm-color-one fs-5">"Travel is the main thing you purchase that makes you more
-                            extravagant"</p>
 
-                        <p>With a vision to fly abundantly and ensure that our clients receive the best of everything
-                            during
-                            their journey,
-                            'Abound Routes' was born, to satisfy your experiential travel.</p>
-                        <p>We aim to present our sub-continent differently with its presence in Sri Lanka, Bhutan, Nepal
-                            and
-                            Maldives.</p>
-                        <p>We are a Destination Management Company that is committed to deliver its clients with
-                            exceptional
-                            services.</p>
-                        <p>We provide complete end-to-end solutions covering all aspects of your travel needs curated
-                            especially for our stakeholders.</p>
-                        <p>Our strength lies in our firm's commitment to duly offer the best and finest quality services
-                            which includes a team of travel consultants with 25 years of experience and certified guides
-                            (English, Spanish, German, French)
-                            who possess deep knowledge and excellent chauffeur services with exceptional and comfortable
-                            fleet.</p>
-                        <p>This makes us stand out from the rest and assure a safe, treasurable, and thrilling
-                            experience
-                            for all our clients.</p>
-                        <p>We remain committed to our principle of giving individual and personalized services
-                            to our travellers and partners from across the world.</p>
+                </div>
+                <div class="col-12">
+                    <div class="about-text text-center mb-xl-30 mx-auto">
+                        <p class="thm-color-one fs-5 fw-600">“One’s destination is never a place, but a new way of seeing things.”. <br> – Henry Miller</p>
+
+                        <p>With a vision to fly abundantly and ensure that our clients receive the best of everything during their journey, Abound Routes came into existence.</p>
+                        <p>To satisfy your experiential travel, we aim at presenting the sub-continent differently with our international offices in Sri Lanka, Bhutan, Nepal and Maldives.</p>
+                        <p>Abound Routes is a Destination Management Company that is committed to deliver its clients with exceptional services. We provide complete end-to-end solutions covering all aspects of your travel needs curated especially for our stakeholders.</p>
                     </div>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="about.html" class="thm-btn">Explore More</a>
                 </div>
             </div>
         </div>
@@ -227,6 +208,9 @@
                             <li class="nav-item col-md col-auto">
                                 <a href="#maldives" class="nav-link" data-bs-toggle="tab">Maldives</a>
                             </li>
+                            <li class="nav-item col-md col-auto">
+                                <a href="#vietnam" class="nav-link" data-bs-toggle="tab">Vietnam</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -240,98 +224,65 @@
                             <div class="tab-content pt-5">
                                 <div class="tab-pane fade show active" id="india">
                                     <h3 class="tab-title">India</h3>
-                                    <p class="text mx-auto">Lorem ipsum dolor sit amet. Tation te dolore ipsum assum
-                                        gubergren. Duis odio praesent sit aliquyam hendrerit delenit. Sit et dolore
-                                        nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at dolor
-                                        sanctus iriure ea sed. Lorem sit dolore. Gubergren feugait quod accusam diam
-                                        takimata. Est praesent et. Ipsum esse minim erat. Dolore lorem clita et.
-                                        Takimata eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita
-                                        commodo sed nonumy. Dolore tempor sea nisl. Facer in magna at gubergren. Ipsum
-                                        luptatum esse sed eirmod ipsum et consetetur. Eu vel tation kasd eos.
-                                    </p>
-                                    <a href="#" class="thm-btn">Explore More</a>
+                                    <p class="text mx-auto">India is not just a country; it is an amalgamation of emotions and experiences that are cherished forever. Arguably the most diverse country of the world, India offers a wide array of age-old traditions, spirituality, festivals, cuisine and landscapes and cultures. </p>
+                                    <p class="text mx-auto">From the snow-clad mountains of the north to sun-soaked beaches in the south, from lush green western ghats to barren golden sand deserts, India offers everything for every aspiration. Be it an adventure sport, a cultural rendezvous or leisure walk through the by lanes of old cities, India will surprise you at every step of the way. And just a delight for the eyes, India offers extreme pleasure for the taste buds too, with its equally diverse cuisines – some new and some centuries old. </p>
                                     <div class="image-box my-5">
                                         <img src="assets/images/destination/india.jpg" alt="india" class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nepal">
                                     <h3 class="tab-title">Nepal</h3>
-                                    <p class="text mx-auto">Lorem ipsum dolor sit amet. Tation te dolore ipsum assum
-                                        gubergren. Duis odio praesent sit aliquyam hendrerit delenit. Sit et dolore
-                                        nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at dolor
-                                        sanctus iriure ea sed. Lorem sit dolore. Gubergren feugait quod accusam diam
-                                        takimata. Est praesent et. Ipsum esse minim erat. Dolore lorem clita et.
-                                        Takimata eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita
-                                        commodo sed nonumy. Dolore tempor sea nisl. Facer in magna at gubergren. Ipsum
-                                        luptatum esse sed eirmod ipsum et consetetur. Eu vel tation kasd eos.
-                                    </p>
-                                    <a href="#" class="thm-btn">Explore More</a>
+                                    <p class="text mx-auto">Under the beautiful canopy of the Himalayas, Nepal is a blend of breathtaking landscapes and rich cultural heritage. Nepal never disappoints. Whether you are a spirituality seeker or an adventurer, whether you want to experience local culture or unwind amidst nature, Nepal is a one-stop destination for all your objectives.</p>
                                     <div class="image-box my-5">
                                         <img src="assets/images/destination/nepal.jpg" alt="nepal" class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="bhutan">
                                     <h3 class="tab-title">Bhutan</h3>
-                                    <p class="text mx-auto">Lorem ipsum dolor sit amet. Tation te dolore ipsum assum
-                                        gubergren. Duis odio praesent sit aliquyam hendrerit delenit. Sit et dolore
-                                        nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at dolor
-                                        sanctus iriure ea sed. Lorem sit dolore. Gubergren feugait quod accusam diam
-                                        takimata. Est praesent et. Ipsum esse minim erat. Dolore lorem clita et.
-                                        Takimata eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita
-                                        commodo sed nonumy. Dolore tempor sea nisl. Facer in magna at gubergren. Ipsum
-                                        luptatum esse sed eirmod ipsum et consetetur. Eu vel tation kasd eos.
-                                    </p>
-                                    <a href="#" class="thm-btn">Explore More</a>
+                                    <p class="text mx-auto">The Land of Thunder Dragon – Bhutan is a bouquet of pristine forests, mesmerizing Himalayan views and the vibrant Buddhist culture. Bhutan has created an authentic travel experience through a very strong emphasis on sustainability and preservation of its natural treasures. The beautiful natural landscapes of Bhutan are punctuated with ancient fortresses and magnificent monasteries. </p>
                                     <div class="image-box my-5">
                                         <img src="assets/images/destination/bhutan.jpg" alt="bhutan" class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="sriLanka">
                                     <h3 class="tab-title">Sri Lanka</h3>
-                                    <p class="text mx-auto">Lorem ipsum dolor sit amet. Tation te dolore ipsum assum
-                                        gubergren. Duis odio praesent sit aliquyam hendrerit delenit. Sit et dolore
-                                        nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at dolor
-                                        sanctus iriure ea sed. Lorem sit dolore. Gubergren feugait quod accusam diam
-                                        takimata. Est praesent et. Ipsum esse minim erat. Dolore lorem clita et.
-                                        Takimata eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita
-                                        commodo sed nonumy. Dolore tempor sea nisl. Facer in magna at gubergren. Ipsum
-                                        luptatum esse sed eirmod ipsum et consetetur. Eu vel tation kasd eos.
-                                    </p>
-                                    <a href="#" class="thm-btn">Explore More</a>
+                                    <p class="text mx-auto">Sri Lanka is a destination of top choice for those who love palm-fringed beaches, lush green tea plantations and ancient cultural sites. Sri Lanka offers a beautiful contrast of the bustling streets of Colombo and the serene hills of Kandy – the picturesque beaches of the south coast on one hand to the vibrant culture on the other. Sri Lanka is a paradise in itself with a plethora of exquisite experiences. </p>
                                     <div class="image-box my-5">
                                         <img src="assets/images/destination/srilanka.jpg" alt="sriLanka"
                                             class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="maldives">
-                                    <h3 class="tab-title">India</h3>
-                                    <p class="text mx-auto">Lorem ipsum dolor sit amet. Tation te dolore ipsum assum
-                                        gubergren. Duis odio praesent sit aliquyam hendrerit delenit. Sit et dolore
-                                        nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at dolor
-                                        sanctus iriure ea sed. Lorem sit dolore. Gubergren feugait quod accusam diam
-                                        takimata. Est praesent et. Ipsum esse minim erat. Dolore lorem clita et.
-                                        Takimata eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita
-                                        commodo sed nonumy. Dolore tempor sea nisl. Facer in magna at gubergren. Ipsum
-                                        luptatum esse sed eirmod ipsum et consetetur. Eu vel tation kasd eos.
-                                    </p>
-                                    <a href="#" class="thm-btn">Explore More</a>
+                                    <h3 class="tab-title">Maldives</h3>
+                                    <p class="text mx-auto">This island nation is an ultimate travel destination that offers turquoise waters, white sand beaches and spectacular coral reefs. Maldives is an ideal destination for those who prefer to unwind in purity of nature away from the bustling city life. It offers many wonderful experiences like lounging in a luxurious over water villa, snorkeling, diving in the pristine waters to observe the colorful marine life and enjoying a romantic sunset cruise. </p>
                                     <div class="image-box my-5">
                                         <img src="assets/images/destination/maldives.jpg" alt="maldives"
                                             class="image-fit">
                                     </div>
                                 </div>
+                                <div class="tab-pane fade" id="vietnam">
+                                    <h3 class="tab-title">Vietnam</h3>
+                                    <p class="text mx-auto">Vietnam is as interesting as its mouth-watering cuisines, ancient temples and pagodas, local market and rice paddies. This beautiful land offers experiences that will be transformed into unforgettable memories like - trekking through the lush highlands of Sapa or cycling through the rice paddies, visit to bustling local markets and a visit to mystical ancient temples. </p>
+                                    <div class="image-box my-5">
+                                        <img src="assets/images/destination/vietnam.jpg" alt="maldives"
+                                            class="image-fit">
+                                    </div>
+                                </div>
+                                <a href="sub-continent.html" class="thm-btn mb-5">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="assets/images/latest-images/half-flower.png" alt="flower" class="destination-flower d-none d-lg-block">
+            <img src="assets/images/latest-images/half-flower.png" alt="flower"
+                class="destination-flower d-none d-lg-block">
         </div>
     </section>
     <!-- Destination End -->
     <!-- Experience Start -->
-    <section class="section pt-0 section-bg experiences position-relative" style="background-image: url('assets/images/latest-images/03.jpg');background-position: bottom right;"
-        id="experiences">
+    <section class="section pt-0 section-bg-fixed experiences position-relative"
+        style="background-image: url('assets/images/latest-images/03.jpg');background-position: bottom right;"
+        id="curatedExperiences">
         <div class="container pb-5">
             <div class="section pb-0 mb-5 px-4" style="background-color:rgba(var(--thm-color-one-dark-rgb),0.9);">
                 <div class="row justify-content-center">
@@ -340,19 +291,7 @@
                             <img src="assets/images/icon.png" class="icon" alt="icon">
                             <h3 class="title text-white">Curated Experiences</h3>
                         </div>
-                        <p class="thm-font-serif text-white mb-5">Lorem ipsum dolor sit amet. Tation te dolore ipsum
-                            assum
-                            gubergren. Duis odio praesent sit
-                            aliquyam hendrerit delenit. Sit et dolore nihil no amet ut. Te kasd vero diam. Sea quis ut
-                            facilisis
-                            kasd. Et at dolor sanctus iriure ea sed. Lorem sit dolore. Gubergren feugait quod accusam
-                            diam
-                            takimata. Est praesent et. Ipsum esse minim erat. Dolore lorem clita et. Takimata eum ut eu
-                            elitr
-                            consequat. Et at eu. Amet mazim est commodo. Clita commodo sed nonumy. Dolore tempor
-                            sea nisl. Facer in magna at gubergren. Ipsum luptatum esse sed eirmod ipsum et consetetur.
-                            EuF
-                        </p>
+                        <p class="thm-font-serif text-white mb-5">A visit to the sub-continent is a journey within oneself. The incredible sights, sounds, flavors and aromas of the sub-continent will let you explore what you truly prefer. It is a lifetime experience that creates unforgettable memories. The contrasting landscapes, cuisines and culture hold the most exciting and unique experiences. You name it and you will get it!</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -360,7 +299,7 @@
                         <div class="service-slider service-slider-ui">
                             <div class="item-box">
                                 <div class="item">
-                                    <h5 class="title thm-font-serif">Wellness</h5>
+                                    <h5 class="title thm-font-serif">Culture & Heritage</h5>
                                     <div class="animated-img">
                                         <img src="assets/images/service/1.jpg" alt="service" class="image-fit">
                                     </div>
@@ -368,7 +307,7 @@
                             </div>
                             <div class="item-box">
                                 <div class="item">
-                                    <h5 class="title thm-font-serif">Wildlife</h5>
+                                    <h5 class="title thm-font-serif">Adventure</h5>
                                     <div class="animated-img">
                                         <img src="assets/images/service/2.jpg" alt="service" class="image-fit">
                                     </div>
@@ -376,7 +315,7 @@
                             </div>
                             <div class="item-box">
                                 <div class="item">
-                                    <h5 class="title thm-font-serif">Art & Architecture</h5>
+                                    <h5 class="title thm-font-serif">Yoga & Wellness</h5>
                                     <div class="animated-img">
                                         <img src="assets/images/service/3.jpg" alt="service" class="image-fit">
                                     </div>
@@ -384,17 +323,9 @@
                             </div>
                             <div class="item-box">
                                 <div class="item">
-                                    <h5 class="title thm-font-serif">Spritual</h5>
+                                    <h5 class="title thm-font-serif">History</h5>
                                     <div class="animated-img">
                                         <img src="assets/images/service/4.jpg" alt="service" class="image-fit">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-box">
-                                <div class="item">
-                                    <h5 class="title thm-font-serif">Photography</h5>
-                                    <div class="animated-img">
-                                        <img src="assets/images/service/5.jpg" alt="service" class="image-fit">
                                     </div>
                                 </div>
                             </div>
@@ -406,18 +337,18 @@
         <div class="container btn-area">
             <div class="row">
                 <div class="col-12 text-center">
-                    <a href="#" class="thm-btn style-white">Explore All Experiences</a>
+                    <a href="curated-experiences.html" class="thm-btn style-white">Explore All Experiences</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Experience End -->
     <!-- Services Start -->
-    <section class="section section-padding position-relative" id="services">
+    <section class="section position-relative" id="expertise">
         <div class="container">
             <div class="section-header">
                 <img src="assets/images/icon.png" class="icon" alt="icon">
-                <h3 class="title">Our Services</h3>
+                <h3 class="title">Our Expertise</h3>
             </div>
         </div>
         <div class="container">
@@ -438,28 +369,31 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="service-box">
-                        <h4 class="title">Sample Text</h4>
-                        <img src="assets/images/latest-images/service/1.jpg" alt="servcie" class="image-fit">
+                    <a href="expertise.html#independentTours" class="service-box">
+                        <h4 class="title">Independent <br> Tours</h4>
+                        <img src="assets/images/home-expertise/01.jpg" alt="servcie" class="image-fit">
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="service-box">
-                        <h4 class="title">Sample Text</h4>
-                        <img src="assets/images/latest-images/service/2.jpg" alt="servcie" class="image-fit">
+                    <a href="expertise.html#customizedGroups" class="service-box">
+                        <h4 class="title">Customized <br> Groups</h4>
+                        <img src="assets/images/home-expertise/02.jpg" alt="servcie" class="image-fit">
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="service-box">
-                        <h4 class="title">Sample Text</h4>
-                        <img src="assets/images/latest-images/service/3.jpg" alt="servcie" class="image-fit">
+                    <a href="expertise.html#uniqueExperiences" class="service-box">
+                        <h4 class="title">Unique <br> Experiences</h4>
+                        <img src="assets/images/home-expertise/03.jpg" alt="servcie" class="image-fit">
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="service-box">
-                        <h4 class="title">Sample Text</h4>
-                        <img src="assets/images/latest-images/service/4.jpg" alt="servcie" class="image-fit">
+                    <a href="expertise.html#mice" class="service-box">
+                        <h4 class="title">Meetings, Incentives, Conferences & Events</h4>
+                        <img src="assets/images/home-expertise/04.jpg" alt="servcie" class="image-fit">
                     </a>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="expertise.html" class="thm-btn">Explore More</a>
                 </div>
             </div>
         </div>
@@ -556,6 +490,7 @@
                         <ul class="contact-info">
                             <li><span>T</span> <a href="tel:+91-0000000000">+91-0000000000</a></li>
                             <li><span>E</span> <a href="mailto:info@aboundroutes.com">info@aboundroutes.com</a></li>
+                            <li><span>$</span> <a href="index.html" target="_blank">Pay Now</a></li>
                         </ul>
                     </div>
                 </div>
@@ -565,16 +500,15 @@
                         <li><a href="#subContinent" class="scroll-link">India Subcontinent</a></li>
                         <li><a href="#destination" class="scroll-link">Destinations</a></li>
                         <li><a href="#header" class="scroll-link">Signature Programs</a></li>
-                        <li><a href="#experiences" class="scroll-link">Curated Experiences</a></li>
-                        <li><a href="#services" class="scroll-link">Services</a></li>
-                        <li><a href="#contact" class="scroll-link">CSR</a></li>
+                        <li><a href="#curatedExperiences" class="scroll-link">Curated Experiences</a></li>
+                        <li><a href="#expertise" class="scroll-link">Expertise</a></li>
+                        <li><a href="contact.html" class="scroll-link">CSR</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer End -->
-
     <a href="#" data-target="html" class="back-to-top ft-sticky">
         <i class="fal fa-chevron-up"></i>
     </a>
@@ -583,6 +517,15 @@
     <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins/slick.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',  // Set the language of your website
+                autoDisplay: false,  // Do not display the widget automatically
+            }, 'google_translate_element');
+        }
+    </script>
+
 </body>
 
 </html>
