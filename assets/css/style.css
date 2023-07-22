@@ -754,7 +754,6 @@ textarea.form-control-custom + i {
   position: relative;
   /* box-shadow: 0 0 8px rgb(var(--thm-color-two-rgb), 10%); */
 }
-
 .header .logo_wrap {
   margin-bottom: -42px;
 }
@@ -771,7 +770,7 @@ textarea.form-control-custom + i {
   text-align: center;
   padding: 50px 0 0;
   max-width: 85%;
-  margin: 0 auto 0 0;
+  margin: 0 auto 5px 0;
 }
 
 .header .navigation_inner,
@@ -789,18 +788,24 @@ textarea.form-control-custom + i {
 
 .header .navigation .main-menu > .menu-item > a {
   color: var(--thm-color-one);
-  text-transform: uppercase;
-  font-size: 16px;
+  /*text-transform: uppercase;
+  */font-size: 16px;
   padding: 8px 24px;
   font-weight: 500;
   display: flex;
   align-items: center;
+  transition:0.3s all;
+  transform: scale(1);
 }
-
-.header .navigation .main-menu > .menu-item > a.active,
-.header .navigation .main-menu > .menu-item:hover > a {
+.header .navigation .main-menu > .menu-item:hover > a{
+  transform: scale(1.1);
+}
+/* .header .navigation .main-menu > .menu-item:hover > a, */
+.header .navigation .main-menu > .menu-item:hover > a.active,
+.header .navigation .main-menu > .menu-item > a.active {
   background-color: var(--thm-color-one);
   color: var(--thm-white);
+  transform: scale(1);
 }
 
 .header .navigation .menu-item-has-children {
@@ -924,6 +929,33 @@ textarea.form-control-custom + i {
   align-items: center;
   justify-content: center;
 }
+
+.header.absolute{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  transition: 0.3s all;
+}
+.header.absolute.sticky{
+  background-color: var(--thm-color-two);
+}
+.header.absolute .logo{
+  padding: 0;
+  max-width: 55%;
+  padding-top: 15px;
+}
+.header.absolute .logo_wrap .link{
+  margin-top: 15px;
+}
+.header.absolute .logo_wrap{
+  margin-bottom: -45px;
+}
+.header.absolute .navigation .main-menu > .menu-item > a{
+  color: var(--thm-white);
+}
 /* banner */
 .banner {
   position: relative;
@@ -974,7 +1006,7 @@ textarea.form-control-custom + i {
   text-align: center;
   padding: 0.7rem 1rem;
 }
-.tabs .nav-item:hover > .nav-link::after,
+/* .tabs .nav-item:hover > .nav-link::after, */
 .tabs .nav-item .nav-link.active::after {
   content: "";
   background-image: url("../images/active-icon.png");
@@ -1002,11 +1034,11 @@ textarea.form-control-custom + i {
   font-size: 18px;
   padding-left: 15%;
 }
-.tabs.style_two .nav-item:hover > .nav-link,
+/* .tabs.style_two .nav-item:hover > .nav-link, */
 .tabs.style_two .nav-item .nav-link.active {
   color: var(--thm-color-dark);
 }
-.tabs.style_two .nav-item:hover > .nav-link::after,
+/* .tabs.style_two .nav-item:hover > .nav-link::after, */
 .tabs.style_two .nav-item .nav-link.active::after {
   background-image: url("../images/icon.png");
   left: 0;
@@ -1022,6 +1054,7 @@ textarea.form-control-custom + i {
 }
 .tabs.style_three .nav-item {
   width: auto;
+  margin-top: 25px;
 }
 .tabs.style_three .nav-item .nav-link {
   text-align: center;
@@ -1029,9 +1062,10 @@ textarea.form-control-custom + i {
   padding-left: 1rem;
   border-bottom: 8px solid #fff;
   font-family: var(--thm-font);
+  font-size: 16px;
 }
 
-.tabs.style_three .nav-item:hover > .nav-link::before,
+/* .tabs.style_three .nav-item:hover > .nav-link::before, */
 .tabs.style_three .nav-item .nav-link.active::before {
   content: "";
   background-image: url("../images/tab-shape.jpg");
@@ -1042,12 +1076,20 @@ textarea.form-control-custom + i {
   left: 0;
   bottom: -1px;
 }
-.tabs.style_three .nav-item:hover > .nav-link::after,
+/* .tabs.style_three .nav-item:hover > .nav-link::after, */
 .tabs.style_three .nav-item .nav-link.active::after {
   right: 0;
   left: 50%;
   transform: translateX(-50%);
   top: -25px;
+}
+.tabs .nav-item:hover .nav-link.active,
+.tabs .nav-item .nav-link{
+  transform:none;
+  transition: 0.3s all;
+}
+.tabs .nav-item:hover .nav-link{
+  transform: scaleX(1.1);
 }
 .tabs-data .tab-title {
   text-transform: uppercase;
@@ -1058,7 +1100,7 @@ textarea.form-control-custom + i {
   max-width: 90%;
 }
 .tabs-data .image-box {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
 }
 

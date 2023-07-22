@@ -1,10 +1,18 @@
-@media (max-width: 1199px) {
+@media (max-width: 1400px){
+  .header.absolute .logo{
+    max-width: 80%;
+  }
+}
+@media (max-width: 1200px) {
   .header .logo {
     max-width: 90%;
   }
   .header .navigation .main-menu > .menu-item > a {
     font-size: 14px;
     padding: 8px 16px;
+  }
+  .header.absolute .logo{
+    max-width: 80%;
   }
 }
 @media (max-width: 991px) {
@@ -21,6 +29,7 @@
   .header .logo_wrap {
     margin-bottom: 0;
   }
+  .header.absolute .logo,
   .header .logo {
     max-width: 150px;
     padding-top: 15px;
@@ -95,6 +104,9 @@
     justify-content: end;
     width: 100%;
   }
+  .header.absolute .header_actions{
+    margin-top: 0;
+  }
   #google_translate_element{
     margin-top: 8px;
   }
@@ -130,6 +142,13 @@
     .subcontinent-text-bg{
         padding: 30px;
     }
+    .banner .banner-text .title{
+      font-size: 30px;
+    }
 }
 @media (max-width: 575px) {
+  .banner .banner-text .title{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 }
