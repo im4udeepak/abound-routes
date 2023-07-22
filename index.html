@@ -27,7 +27,7 @@
     </div>
     <!-- Preloader End -->
     <!-- Header Start -->
-    <section class="header can-sticky" id="header">
+    <header class="header can-sticky absolute" id="header">
         <!-- logo -->
         <div class="logo_wrap">
             <div class="container">
@@ -42,7 +42,7 @@
                     <div class="col-lg-9 col-6">
                         <div class="d-flex justify-content-end">
                             <div id="google_translate_element" class="d-inline-block link"></div>
-                            <a href="#contact" class="link scroll-link d-none d-lg-inline-block ms-4">Contact Us</a>
+                            <a href="contact.html" class="link scroll-link d-none d-lg-inline-block ms-4">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -94,18 +94,18 @@
             </div>
         </div>
         <!-- navigation -->
-    </section>
+    </header>
     <!-- Header End -->
     <!-- Banner Start -->
     <div class="banner" id="banner">
-        <div class="container">
+        <div class="container-fluid p-0">
             <video src="assets/videos/banner.mp4" class="image-fit" autoplay="true" loop muted="true"></video>
             <!-- <img src="assets/images/latest-images/01.png" alt="banner" class="image-fit"> -->
         </div>
     </div>
     <!-- Banner End -->
     <!-- About Start -->
-    <section class="section section-bg" id="about" style="background-image: url('assets/images/white-flower.png');">
+    <section class="section section-bg  section-bg-fixed" id="about" style="background-image: url('assets/images/white-flower.png');">
         <div class="container">
             <div class="section-header">
                 <img src="assets/images/icon.png" class="icon" alt="icon">
@@ -136,11 +136,16 @@
                 </div>
                 <div class="col-12">
                     <div class="about-text text-center mb-xl-30 mx-auto">
-                        <p class="thm-color-one fs-5 fw-600">“One’s destination is never a place, but a new way of seeing things.”. <br> – Henry Miller</p>
+                        <p class="thm-color-one fs-5 fw-600">“One’s destination is never a place, but a new way of
+                            seeing things.”. <br> – Henry Miller</p>
 
-                        <p>With a vision to fly abundantly and ensure that our clients receive the best of everything during their journey, Abound Routes came into existence.</p>
-                        <p>To satisfy your experiential travel, we aim at presenting the sub-continent differently with our international offices in Sri Lanka, Bhutan, Nepal and Maldives.</p>
-                        <p>Abound Routes is a Destination Management Company that is committed to deliver its clients with exceptional services. We provide complete end-to-end solutions covering all aspects of your travel needs curated especially for our stakeholders.</p>
+                        <p>With a vision to fly abundantly and ensure that our clients receive the best of everything
+                            during their journey, Abound Routes came into existence.</p>
+                        <p>To satisfy your experiential travel, we aim at presenting the sub-continent differently with
+                            our international offices in Sri Lanka, Bhutan, Nepal and Maldives.</p>
+                        <p>Abound Routes is a Destination Management Company that is committed to deliver its clients
+                            with exceptional services. We provide complete end-to-end solutions covering all aspects of
+                            your travel needs curated especially for our stakeholders.</p>
                     </div>
                 </div>
                 <div class="col-12 text-center">
@@ -151,7 +156,7 @@
     </section>
     <!-- About End -->
     <!-- Sub continent Start -->
-    <section class="section section-bg pb-0 d-flex align-items-end" id="subContinent"
+    <section class="section section-bg pb-0 d-flex align-items-end section-bg-fixed" id="subContinent"
         style="background-image: url('assets/images/latest-images/02.jpg');height: 800px;">
         <div class="container">
             <div class="section-header">
@@ -224,46 +229,79 @@
                             <div class="tab-content pt-5">
                                 <div class="tab-pane fade show active" id="india">
                                     <h3 class="tab-title">India</h3>
-                                    <p class="text mx-auto">India is not just a country; it is an amalgamation of emotions and experiences that are cherished forever. Arguably the most diverse country of the world, India offers a wide array of age-old traditions, spirituality, festivals, cuisine and landscapes and cultures. </p>
-                                    <p class="text mx-auto">From the snow-clad mountains of the north to sun-soaked beaches in the south, from lush green western ghats to barren golden sand deserts, India offers everything for every aspiration. Be it an adventure sport, a cultural rendezvous or leisure walk through the by lanes of old cities, India will surprise you at every step of the way. And just a delight for the eyes, India offers extreme pleasure for the taste buds too, with its equally diverse cuisines – some new and some centuries old. </p>
-                                    <div class="image-box my-5">
+                                    <p class="text mx-auto">India is not just a country; it is an amalgamation of
+                                        emotions and experiences that are cherished forever. Arguably the most diverse
+                                        country of the world, India offers a wide array of age-old traditions,
+                                        spirituality, festivals, cuisine and landscapes and cultures. </p>
+                                    <p class="text mx-auto">From the snow-clad mountains of the north to sun-soaked
+                                        beaches in the south, from lush green western ghats to barren golden sand
+                                        deserts, India offers everything for every aspiration. Be it an adventure sport,
+                                        a cultural rendezvous or leisure walk through the by lanes of old cities, India
+                                        will surprise you at every step of the way. And just a delight for the eyes,
+                                        India offers extreme pleasure for the taste buds too, with its equally diverse
+                                        cuisines – some new and some centuries old. </p>
+                                    <div class="image-box my-5 animated-img">
                                         <img src="assets/images/destination/india.jpg" alt="india" class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nepal">
                                     <h3 class="tab-title">Nepal</h3>
-                                    <p class="text mx-auto">Under the beautiful canopy of the Himalayas, Nepal is a blend of breathtaking landscapes and rich cultural heritage. Nepal never disappoints. Whether you are a spirituality seeker or an adventurer, whether you want to experience local culture or unwind amidst nature, Nepal is a one-stop destination for all your objectives.</p>
-                                    <div class="image-box my-5">
+                                    <p class="text mx-auto">Under the beautiful canopy of the Himalayas, Nepal is a
+                                        blend of breathtaking landscapes and rich cultural heritage. Nepal never
+                                        disappoints. Whether you are a spirituality seeker or an adventurer, whether you
+                                        want to experience local culture or unwind amidst nature, Nepal is a one-stop
+                                        destination for all your objectives.</p>
+                                    <div class="image-box my-5 animated-img">
                                         <img src="assets/images/destination/nepal.jpg" alt="nepal" class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="bhutan">
                                     <h3 class="tab-title">Bhutan</h3>
-                                    <p class="text mx-auto">The Land of Thunder Dragon – Bhutan is a bouquet of pristine forests, mesmerizing Himalayan views and the vibrant Buddhist culture. Bhutan has created an authentic travel experience through a very strong emphasis on sustainability and preservation of its natural treasures. The beautiful natural landscapes of Bhutan are punctuated with ancient fortresses and magnificent monasteries. </p>
-                                    <div class="image-box my-5">
+                                    <p class="text mx-auto">The Land of Thunder Dragon – Bhutan is a bouquet of pristine
+                                        forests, mesmerizing Himalayan views and the vibrant Buddhist culture. Bhutan
+                                        has created an authentic travel experience through a very strong emphasis on
+                                        sustainability and preservation of its natural treasures. The beautiful natural
+                                        landscapes of Bhutan are punctuated with ancient fortresses and magnificent
+                                        monasteries. </p>
+                                    <div class="image-box my-5 animated-img">
                                         <img src="assets/images/destination/bhutan.jpg" alt="bhutan" class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="sriLanka">
                                     <h3 class="tab-title">Sri Lanka</h3>
-                                    <p class="text mx-auto">Sri Lanka is a destination of top choice for those who love palm-fringed beaches, lush green tea plantations and ancient cultural sites. Sri Lanka offers a beautiful contrast of the bustling streets of Colombo and the serene hills of Kandy – the picturesque beaches of the south coast on one hand to the vibrant culture on the other. Sri Lanka is a paradise in itself with a plethora of exquisite experiences. </p>
-                                    <div class="image-box my-5">
+                                    <p class="text mx-auto">Sri Lanka is a destination of top choice for those who love
+                                        palm-fringed beaches, lush green tea plantations and ancient cultural sites. Sri
+                                        Lanka offers a beautiful contrast of the bustling streets of Colombo and the
+                                        serene hills of Kandy – the picturesque beaches of the south coast on one hand
+                                        to the vibrant culture on the other. Sri Lanka is a paradise in itself with a
+                                        plethora of exquisite experiences. </p>
+                                    <div class="image-box my-5 animated-img">
                                         <img src="assets/images/destination/srilanka.jpg" alt="sriLanka"
                                             class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="maldives">
                                     <h3 class="tab-title">Maldives</h3>
-                                    <p class="text mx-auto">This island nation is an ultimate travel destination that offers turquoise waters, white sand beaches and spectacular coral reefs. Maldives is an ideal destination for those who prefer to unwind in purity of nature away from the bustling city life. It offers many wonderful experiences like lounging in a luxurious over water villa, snorkeling, diving in the pristine waters to observe the colorful marine life and enjoying a romantic sunset cruise. </p>
-                                    <div class="image-box my-5">
+                                    <p class="text mx-auto">This island nation is an ultimate travel destination that
+                                        offers turquoise waters, white sand beaches and spectacular coral reefs.
+                                        Maldives is an ideal destination for those who prefer to unwind in purity of
+                                        nature away from the bustling city life. It offers many wonderful experiences
+                                        like lounging in a luxurious over water villa, snorkeling, diving in the
+                                        pristine waters to observe the colorful marine life and enjoying a romantic
+                                        sunset cruise. </p>
+                                    <div class="image-box my-5 animated-img">
                                         <img src="assets/images/destination/maldives.jpg" alt="maldives"
                                             class="image-fit">
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="vietnam">
                                     <h3 class="tab-title">Vietnam</h3>
-                                    <p class="text mx-auto">Vietnam is as interesting as its mouth-watering cuisines, ancient temples and pagodas, local market and rice paddies. This beautiful land offers experiences that will be transformed into unforgettable memories like - trekking through the lush highlands of Sapa or cycling through the rice paddies, visit to bustling local markets and a visit to mystical ancient temples. </p>
-                                    <div class="image-box my-5">
+                                    <p class="text mx-auto">Vietnam is as interesting as its mouth-watering cuisines,
+                                        ancient temples and pagodas, local market and rice paddies. This beautiful land
+                                        offers experiences that will be transformed into unforgettable memories like -
+                                        trekking through the lush highlands of Sapa or cycling through the rice paddies,
+                                        visit to bustling local markets and a visit to mystical ancient temples. </p>
+                                    <div class="image-box my-5 animated-img">
                                         <img src="assets/images/destination/vietnam.jpg" alt="maldives"
                                             class="image-fit">
                                     </div>
@@ -286,12 +324,16 @@
         <div class="container pb-5">
             <div class="section pb-0 mb-5 px-4" style="background-color:rgba(var(--thm-color-one-dark-rgb),0.9);">
                 <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-6 text-center section pt-0 align-self-end">
+                    <div class="col-xl-6 col-lg-6 text-center section pt-0 align-self-end">
                         <div class="section-header">
                             <img src="assets/images/icon.png" class="icon" alt="icon">
                             <h3 class="title text-white">Curated Experiences</h3>
                         </div>
-                        <p class="thm-font-serif text-white mb-5">A visit to the sub-continent is a journey within oneself. The incredible sights, sounds, flavors and aromas of the sub-continent will let you explore what you truly prefer. It is a lifetime experience that creates unforgettable memories. The contrasting landscapes, cuisines and culture hold the most exciting and unique experiences. You name it and you will get it!</p>
+                        <p class="thm-font-serif text-white mb-5">A visit to the sub-continent is a journey within
+                            oneself. The incredible sights, sounds, flavors and aromas of the sub-continent will let you
+                            explore what you truly prefer. It is a lifetime experience that creates unforgettable
+                            memories. The contrasting landscapes, cuisines and culture hold the most exciting and unique
+                            experiences. You name it and you will get it!</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -371,25 +413,33 @@
                 <div class="col-lg-3 col-sm-6">
                     <a href="expertise.html#independentTours" class="service-box">
                         <h4 class="title">Independent <br> Tours</h4>
-                        <img src="assets/images/home-expertise/01.jpg" alt="servcie" class="image-fit">
+                        <div class="animated-img">
+                            <img src="assets/images/home-expertise/01.jpg" alt="servcie" class="image-fit">
+                        </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <a href="expertise.html#customizedGroups" class="service-box">
                         <h4 class="title">Customized <br> Groups</h4>
-                        <img src="assets/images/home-expertise/02.jpg" alt="servcie" class="image-fit">
+                        <div class="animated-img">
+                            <img src="assets/images/home-expertise/02.jpg" alt="servcie" class="image-fit">
+                        </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <a href="expertise.html#uniqueExperiences" class="service-box">
                         <h4 class="title">Unique <br> Experiences</h4>
-                        <img src="assets/images/home-expertise/03.jpg" alt="servcie" class="image-fit">
+                        <div class="animated-img">
+                            <img src="assets/images/home-expertise/03.jpg" alt="servcie" class="image-fit">
+                        </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <a href="expertise.html#mice" class="service-box">
                         <h4 class="title">Meetings, Incentives, Conferences & Events</h4>
-                        <img src="assets/images/home-expertise/04.jpg" alt="servcie" class="image-fit">
+                        <div class="animated-img">
+                            <img src="assets/images/home-expertise/04.jpg" alt="servcie" class="image-fit">
+                        </div>
                     </a>
                 </div>
                 <div class="col-12 text-center">
@@ -401,7 +451,7 @@
     </section>
     <!-- Services End -->
     <!-- Contact Start -->
-    <section class="section section-padding contact-box" id="contact"
+    <section class="section section-padding contact-box section-bg-fixed" id="contact"
         style="background-image: url('assets/images/latest-images/bkg.jpg');">
         <div class="container">
             <div class="row align-items-center">
@@ -502,7 +552,7 @@
                         <li><a href="#header" class="scroll-link">Signature Programs</a></li>
                         <li><a href="#curatedExperiences" class="scroll-link">Curated Experiences</a></li>
                         <li><a href="#expertise" class="scroll-link">Expertise</a></li>
-                        <li><a href="contact.html" class="scroll-link">CSR</a></li>
+                        <!-- <li><a href="contact.html" class="scroll-link">CSR</a></li> -->
                     </ul>
                 </div>
             </div>
