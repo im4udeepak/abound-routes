@@ -3,6 +3,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://aboundroutes.com/sitemap_index.xml
+Sitemap: http://aboundroutes.com/sitemap.xml
 # ---------------------------
 # END YOAST BLOCK
