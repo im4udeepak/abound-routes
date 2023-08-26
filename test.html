@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <!-- <video id="myVideo" width="320" height="176" autoplay loop>
+        <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/tags/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video> -->
+    <video id="myVideo" autoplay loop muted>
+        <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/tags/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <button type="button" onclick="enableAudioPlay()">Unmute</button>
+    <script>
+        let vid = document.getElementById("myVideo");
+        function enableAudioPlay() {
+            vid.muted = false;
+            // vid.load();
+        }
+    </script>
+
+</body>
+
+</html>

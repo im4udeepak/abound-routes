@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="zxx">
 
 <head>
@@ -22,10 +22,11 @@
     <!-- Css -->
     <link href="assets/css/plugins/bootstrap.min.css" rel="stylesheet">
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/plugins/slick.css" rel="stylesheet">
+    <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </head>
 
 <body>
@@ -38,19 +39,25 @@
     <header class="header can-sticky absolute" id="header">
         <!-- logo -->
         <div class="logo_wrap">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-6">
+                    <div class="col-lg col-6">
                         <div class="logo">
-                            <a href="#header" class="scroll-link">
+                            <a href="index.html" class="scroll-link">
                                 <img src="assets/images/logo.png" alt="logo" class="image-fit-contain">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-6">
                         <div class="d-flex justify-content-end">
-                            <div id="google_translate_element" class="d-inline-block link"></div>
-                            <a href="contact.html" class="link scroll-link d-none d-lg-inline-block ms-4">Contact Us</a>
+                            <div class="input-group link d-flex justify-content-end align-items-center">
+                                <span class="input-group-text bg-transparent border-0 p-0 pe-2">
+                                    <img src="assets/images/en.png" alt="English" title="English">
+                                </span>
+                                <div id="google_translate_element" class="d-inline-block"></div>
+                            </div>
+                            <!-- d-lg-inline-block -->
+                            <a href="contact.html" class="link scroll-link d-none ms-4">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -58,30 +65,31 @@
         </div>
         <!-- logo -->
         <!-- navigation -->
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-end">
-                <div class="col-lg-9">
+                <div class="col-lg-10">
                     <div class="navigation_inner">
                         <!-- bar -->
                         <nav class="navigation">
                             <ul class="main-menu">
                                 <li class="menu-item">
-                                    <a href="#header" class="scroll-link active">Home</a>
+                                    <a href="index.html" class="scroll-link active">Home</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#about" class="scroll-link">About Us</a>
+                                    <a href="about.html" class="scroll-link">About Us</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#subContinent" class="scroll-link">India & Sub-Continent</a>
+                                    <a href="sub-continent.html" class="scroll-link">India & Sub-Continent</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#curatedExperiences" class="scroll-link">Curated Experiences</a>
+                                    <a href="curated-experiences.html" class="scroll-link">Curated Experiences</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#expertise" class="scroll-link">Our Expertise</a>
+                                    <a href="expertise.html" class="scroll-link">Our Expertise</a>
                                 </li>
-                                <li class="menu-item d-block d-lg-none">
-                                    <a href="contact.html" class="scroll-link">Contact Us</a>
+                                <!--  d-block d-lg-none -->
+                                <li class="menu-item">
+                                    <a href="contact.aspx" class="scroll-link">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -107,7 +115,10 @@
     <!-- Banner Start -->
     <div class="banner" id="banner">
         <div class="container-fluid p-0">
-            <video src="assets/videos/banner.mp4" class="image-fit" autoplay loop muted></video>
+            <video id="myVideo" class="image-fit" autoplay loop muted>
+                <source src="assets/videos/banner1.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
             <div class="banner-text d-none">
                 <h1 class="title text-white">Abound Routes</h1>
             </div>
@@ -130,17 +141,17 @@
                     <div class="row g-0 mb-5 pb-4 justify-content-center">
                         <div class="col-md-4 col-sm-6">
                             <div class="animated-img about-img">
-                                <img src="assets/images/about/1.png" alt="about" class="image-fit">
+                                <img src="assets/images/about/01.jpg" alt="about" class="image-fit">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="animated-img about-img">
-                                <img src="assets/images/about/2.png" alt="about" class="image-fit">
+                                <img src="assets/images/about/02.jpg" alt="about" class="image-fit">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="animated-img about-img">
-                                <img src="assets/images/about/3.png" alt="about" class="image-fit">
+                                <img src="assets/images/about/03.jpg" alt="about" class="image-fit">
                             </div>
                         </div>
                     </div>
@@ -148,15 +159,18 @@
                 </div>
                 <div class="col-12">
                     <div class="about-text text-center mb-xl-30 mx-auto">
-                        <p class="thm-color-one fs-5 fw-600">“One’s destination is never a place, but a new way of
-                            seeing things.”. <br> – Henry Miller</p>
+                        <p class="thm-color-one fw-600">“One’s destination is never a place, but a new way of
+                            seeing things.”. <br> – <span class="fw-500">Henry Miller</span></p>
 
-                        <p>With a vision to fly abundantly and ensure that our clients receive the best of everything
-                            during their journey, Abound Routes came into existence.</p>
+                        <p>With a vision to fly abundantly and ensure that our clients receive <br> the best of
+                            everything
+                            during their journey, <br> Abound Routes came into existence.</p>
                         <p>To satisfy your experiential travel, we aim at presenting the sub-continent differently with
-                            our international offices in Sri Lanka, Bhutan, Nepal and Maldives.</p>
+                            <br> our international offices in Sri Lanka, Bhutan, Nepal and Maldives.
+                        </p>
                         <p>Abound Routes is a Destination Management Company that is committed to deliver its clients
-                            with exceptional services. We provide complete end-to-end solutions covering all aspects of
+                            with exceptional services. <br> We provide complete end-to-end solutions covering all
+                            aspects of <br>
                             your travel needs curated especially for our stakeholders.</p>
                     </div>
                 </div>
@@ -178,18 +192,14 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="subcontinent-text-bg">
-                        Lorem ipsum dolor sit amet. Tation te dolore ipsum assum gubergren. Duis odio praesent sit
-                        aliquyam hendrerit
-                        delenit. Sit et dolore nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at
-                        dolor sanctus iriure ea sed.
-                        Lorem sit dolore. Gubergren feugait quod accusam diam takimata. Est praesent et. Ipsum esse
-                        minim erat. Dolore
-                        lorem clita et. Takimata eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita
-                        commodo sed nonumy.
-                        Dolore tempor sea nisl. Facer in magna at gubergren. Ipsum luptatum esse sed eirmod ipsum et
-                        consetetur. Eu vel
-                        tation kasd eos. Sit no labore ipsum. Sed aliquam eos ea at. Et enim amet vel ea tincidunt et
-                        dolor.
+                        Exceptionally rich in culture and nature, the Indian Subcontinent is a perfect amalgamation of
+                        vibrant sights and pleasing sounds.
+                        <br />
+                        <br />
+                        Being home to the world’s oldest civilisations, it is also a birthplace of Hinduism and
+                        Buddhism. The wealth of diversity it offers is truly amazing. From the adventurous aspirations
+                        to spirituality goals, from peaceful retreats to bustling cities, the Subcontinent has
+                        everything for everyone.
                     </div>
                 </div>
             </div>
@@ -409,15 +419,10 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8">
                     <p class="thm-font-serif text-center mb-5">
-                        Lorem ipsum dolor sit amet. Tation te dolore ipsum assum gubergren. Duis odio praesent sit
-                        aliquyam hendrerit delenit. Sit et
-                        dolore nihil no amet ut. Te kasd vero diam. Sea quis ut facilisis kasd. Et at dolor sanctus
-                        iriure ea sed. Lorem sit dolore.
-                        Gubergren feugait quod accusam diam takimata. Est praesent et. Ipsum esse minim erat. Dolore
-                        lorem clita et. Takimata
-                        eum ut eu elitr consequat. Et at eu. Amet mazim est commodo. Clita commodo sed nonumy. Dolore
-                        tempor sea nisl. Facer in
-                        magna at gubergren. Ipsum luptatum esse sed eirmod ipsum et consetetur. Eu vel tation kasd eos.
+                        We, at Abound Routes, use our experience, creative thinking and strategic planning to create the
+                        most enchanting travel experiences for all our clients. From designing a program to its
+                        execution and even custom-making it, we believe in redefining travelling experiences by offering
+                        a distinctive approach to conventional travel.
                     </p>
                 </div>
             </div>
@@ -467,46 +472,58 @@
         style="background-image: url('assets/images/latest-images/bkg.jpg');">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-7 col-lg-6">
+                <div class="col-xl-8 col-lg-6">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="service-box style_two">
                                 <h4 class="title">Gallery</h4>
-                                <a href="#" class="icon-style">
-                                    <img src="assets/images/latest-images/gallery.jpg" alt="icon" class="image-fit">
-                                </a>
+                                <div class="icon-style d-block gallery-slider" id="gallery-container">
+                                    <!-- <a href="#" class="image-fit">
+                                        <img src="assets/images/latest-images/gallery.jpg" alt="icon" class="image-fit">
+                                    </a>
+                                    <a href="#" class="image-fit">
+                                        <img src="assets/images/latest-images/gallery.jpg" alt="icon" class="image-fit">
+                                    </a> -->
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="service-box style_two">
                                 <h4 class="title">Videos</h4>
-                                <a href="#" class="icon-style border-2">
+                                <a href="https://www.youtube.com/channel/UC-b49lhEbyPv9vbyteBnaWA" target='_blank'
+                                    class="icon-style border-2">
                                     <img src="assets/images/yt-icon.png" alt="icon">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6">
+                <div class="col-xl-4 col-lg-6">
                     <div class="section-header">
                         <img src="assets/images/icon.png" class="icon" alt="icon">
-                        <h3 class="title text-white">Contact Us</h3>
+                        <h3 class="title text-white">Follow Us</h3>
                     </div>
                     <ul class="social-icons">
                         <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100092982066861" target='_blank'><i
+                                    class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://WWW.linkedin.com/in/abound-routes-165866286" target='_blank'><i
+                                    class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/AboundRoutes" target='_blank'>
+                                <img src="assets/images/twitter-x.svg" alt="twitter">
+                                <!-- <i class="fab fa-twitter"></i> -->
+                            </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/aboundroutes?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                                target='_blank'><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
-                    <form action="#" class="px-4">
+                    <!-- <form action="#" class="px-4">
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="fullname" class="text-white thm-font-serif">Full name <span
@@ -529,7 +546,7 @@
                         <div class="form-group">
                             <button type="submit" class="thm-btn style-white">Submit</button>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
@@ -538,21 +555,28 @@
     <!-- Footer Start -->
     <footer class="section section-padding" id="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-2">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-6">
                     <a href="#header" class="logo scroll-link">
                         <img src="assets/images/logo.png" alt="logo" class="image-fit">
                     </a>
                 </div>
-                <div class="col-xl-6 col-lg-7">
+                <div class="col-xl-5 col-lg-7">
                     <div class="middle">
-                        <h4 class="title">Abound Routes Pvt Ltd.</h4>
-                        <p class="text">Sample Text for Some Text for Address only</p>
-                        <p class="text">Sample Text for Some Text for Address only place for Text</p>
+                        <h4 class="title">Abound Routes LLP.</h4>
+                        <!-- <p class="text">15th - 16th Floor, Plot C2</p>
+                        <p class="text">E Square Building, Sector 96, Noida - 201301</p> -->
                         <ul class="contact-info">
-                            <li><span>T</span> <a href="tel:+91-0000000000">+91-0000000000</a></li>
-                            <li><span>E</span> <a href="mailto:info@aboundroutes.com">info@aboundroutes.com</a></li>
-                            <li><span>$</span> <a href="index.html" target="_blank rel="noopener"">Pay Now</a></li>
+                            <li><span class="fal fa-mobile-android"></span> <a
+                                    href="tel:+91-8929122331">+91-8929122331</a></li>
+                            <li><span class="fas fa-envelope"></span> <a
+                                    href="mailto:info@aboundroutes.com">info@aboundroutes.com</a></li>
+                            <li><span class="fas fa-map-marker-alt"></span> <a href="#">
+                                    15th - 16th Floor, Plot C2
+                                    <br>
+                                    E Square Building, Sector 96, Noida - 201301
+                                </a></li>
+                            <!-- <li><span>$</span> <a href="index.html" target="_blank rel=" noopener"">Pay Now</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -560,10 +584,10 @@
                     <ul class="menu">
                         <li><a href="#about" class="scroll-link">About Us</a></li>
                         <li><a href="#subContinent" class="scroll-link">India Subcontinent</a></li>
-                        <li><a href="#destination" class="scroll-link">Destinations</a></li>
-                        <li><a href="#header" class="scroll-link">Signature Programs</a></li>
+                        <!-- <li><a href="#destination" class="scroll-link">Destinations</a></li> -->
+                        <!-- <li><a href="#header" class="scroll-link">Signature Programs</a></li> -->
                         <li><a href="#curatedExperiences" class="scroll-link">Curated Experiences</a></li>
-                        <li><a href="#expertise" class="scroll-link">Expertise</a></li>
+                        <li><a href="#expertise" class="scroll-link">Our Expertise</a></li>
                         <!-- <li><a href="contact.html" class="scroll-link">CSR</a></li> -->
                     </ul>
                 </div>
@@ -577,6 +601,9 @@
     <!-- Scripts -->
     <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
         function googleTranslateElementInit() {

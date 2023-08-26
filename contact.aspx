@@ -1,7 +1,14 @@
-<!DOCTYPE HTML>
-<html lang="zxx">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="contact" %>
 
-<head>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -96,7 +103,7 @@
                                 </li>
                                 <!--  d-block d-lg-none -->
                                 <li class="menu-item">
-                                    <a href="contact.html" class="scroll-link active">Contact Us</a>
+                                    <a href="contact.aspx" class="scroll-link active">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -156,28 +163,31 @@
                                 <a href="https://instagram.com/aboundroutes?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target= '_blank'><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
-                        <form action="#" class="p-4 bg-white">
+                        <form action="#" runat="server" class="p-4 bg-white">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="fullname" class="thm-font-serif">Full name <span
-                                            class="required text-danger">*</span></label>
-                                    <input type="text" class="form-control form-control-custom" name="fullname"
-                                        id="fullname" placeholder="Enter your full name" required>
+                                            class="text-danger">*</span></label>
+                                     <asp:TextBox ID="TextBox1" runat="server" class="form-control form-control-custom" placeholder="Enter your full name" required></asp:TextBox>        
+                                   
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="email" class="thm-font-serif">Email I'd <span
                                             class="required text-danger">*</span></label>
-                                    <input type="email" class="form-control form-control-custom" name="email" id="email"
-                                        placeholder="Enter your email i'd" required>
+                                    <asp:TextBox ID="email" runat="server" class="form-control form-control-custom" placeholder="Enter your full name" required></asp:TextBox> 
+                                    
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="message" class="thm-font-serif">Description</label>
-                                <textarea rows="4" class="form-control form-control-custom" name="message" id="message"
-                                    placeholder="Write Something..."></textarea>
+                               <asp:textbox id="Message_Box" runat="server" mode="multiline" class="form-control form-control-custom" placeholder="Write Something..." style="height:100px"  />
                             </div>
                             <div class="form-group mb-0">
-                                <button type="submit" class="thm-btn" onclick="HandleIT(); return false;">Submit</button>
+                                
+                                 <asp:Button ID="btnCreateAccount"  class="thm-btn" runat="server" Text="Submit" 
+                                     OnClientClick="HandleIT(); return false;" onclick="btnCreateAccount_Click" /> 
+                                     <asp:Label ID="Label1" runat="server" Text="Label"  class="required text-danger" Visible="false"></asp:Label>
                             </div>
                         </form>
                     </div>
